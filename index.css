@@ -1,0 +1,115 @@
+
+body
+{
+  background-color: #FFE7CC;
+  /* text-align: center; */
+}
+.parent
+{
+  /* text-align: center; */
+  display: flex;
+  justify-content: center;
+  margin: 200px auto;
+  flex-direction:row ;
+}
+.image1{
+  width: 18.75rem;
+  height: 28.125rem;
+  border-radius: 1rem 0 0 1rem;
+}
+.image2{
+  display: none;
+  width: 600px;
+}
+
+.image-card{
+  display: inline-block;
+  vertical-align: middle;
+  /* margin: 10rem auto 10rem auto; */
+
+
+}
+.written-card
+{
+  display: inline-block;
+  padding: 1rem;
+  /* float: left; */
+  border-radius :0rem 1rem 1rem 0rem; ;
+  width: 16.75rem;
+  height: 26.125em;
+  background-color: white;
+  vertical-align: middle;
+  /* margin: 10rem auto 10rem auto; */
+
+}
+.amount
+{
+  display: inline-block;
+  margin-right: 1rem;
+}
+.p-amount
+{
+  display: inline-block;
+}
+.btn img{
+
+  padding:0rem 1rem;
+}
+.btn {
+  text-align: center;
+  background: #5aa672;
+  background-image: -webkit-linear-gradient(top, #5aa672, #5aa672);
+  background-image: -moz-linear-gradient(top, #5aa672, #5aa672);
+  background-image: -ms-linear-gradient(top, #5aa672, #5aa672);
+  background-image: -o-linear-gradient(top, #5aa672, #5aa672);
+  background-image: linear-gradient(to bottom, #5aa672, #5aa672);
+  -webkit-border-radius: 8;
+  -moz-border-radius: 8;
+  border-radius: 8px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 21px;
+  padding: 1rem 2.5rem 1rem 2.5rem;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #4d7a52;
+  background-image: -webkit-linear-gradient(top, #4d7a52, #087515);
+  background-image: -moz-linear-gradient(top, #4d7a52, #087515);
+  background-image: -ms-linear-gradient(top, #4d7a52, #087515);
+  background-image: -o-linear-gradient(top, #4d7a52, #087515);
+  background-image: linear-gradient(to bottom, #4d7a52, #087515);
+  text-decoration: none;
+}
+@media only screen and (max-width: 600px) {
+  section {
+      flex-direction: column;
+      /* width: 400px; */
+  }
+  .image1{
+    display: none;
+  }
+
+  .image2{
+    display: block;
+    margin:0rem  1rem;
+    height: 18.75rem;
+    width: 24rem;
+    border-radius: 1rem 1rem 0rem 0rem;
+  }
+  .parent{
+    display: block;
+    flex-direction: column;
+    justify-content: center ;
+    margin: 100px auto;
+  }
+  .written-card
+  {
+    height: 24.75rem;
+    width: 22rem;
+    margin: 0rem 1rem;
+    border-radius: 0rem 0rem 1rem 1rem;
+  }
+ 
+}
